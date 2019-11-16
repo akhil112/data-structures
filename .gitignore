@@ -1,0 +1,13 @@
+# Created by .ignore support plugin (hsz.mobi)
+
+apiVersion: v1
+kind: Pod
+metadata:
+  labels:
+    name: myapp
+  name: myapp-pod
+spec:
+  containers:
+    -
+      image: nginx
+      name: nginx-pod
