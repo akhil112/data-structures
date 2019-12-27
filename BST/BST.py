@@ -1,11 +1,11 @@
-class Node():
+class Node:
     def __init__(self,data):
         self.data = data
         self.left = None
         self.right = None
 
 
-class BST():
+class BST:
 
     def __init__(self):
         self.root = None
@@ -17,14 +17,14 @@ class BST():
         if self.root is None:
             self.root = Node(data)
         else:
-            self.insert(data,self.root)
+            self.insert(data, self.root)
     
-    def insert(self,data,cur_node):
+    def insert(self, data, cur_node):
         if data < cur_node.data:
             if cur_node.left is None:
                 cur_node.left = Node(data)
             else:
-                self.insert(data,cur_node.left)
+                self.insert(data, cur_node.left)
         elif data > cur_node.data:
             if cur_node.right is None:
                 cur_node.right = Node(data)
