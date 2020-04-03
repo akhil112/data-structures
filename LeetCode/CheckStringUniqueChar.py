@@ -1,13 +1,10 @@
 # Description = Check if string has unique characters
 
 def unique(val):
-    if len(val) == len(set([c for c in val])):
-        return 1
-    return 0
+    return len(val) == len(set(val))
 
 
-
-if unique("putinnnnn"):
+if unique("akhil"):
     print("Unique")
 else:
     print("Not unique")
