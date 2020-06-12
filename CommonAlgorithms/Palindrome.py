@@ -6,7 +6,7 @@ def is_palindrome(data):
         return 0
 
 
-result = is_palindrome("pop")
+result = is_palindrome("Deleveled")
 
 if result:
     print("palindrome")
